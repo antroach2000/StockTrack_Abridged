@@ -1,4 +1,5 @@
 # StockTrade_Abridged
+
 A shortened repo of StockTracker
 
 Before running the script BuildStockLiveV1DB.sql, change the following destination path on line 7 and 9 for your own environments:
@@ -7,7 +8,9 @@ Before running the script BuildStockLiveV1DB.sql, change the following destinati
 
 Run the script to restore the StockLiveV1 database to SQL Server 2017 or greater
 
+
 # StockTrade_dotNet
+
 Load the .Net Core 6 project StockTrade_dotNet/StockTrade.Web.API.sln
 
 
@@ -36,7 +39,9 @@ API Version is 1 for all requests
 For example:
 
 Stock Code:   BHP
+
 Api Version:  1
+
 
 
 
