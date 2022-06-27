@@ -10,6 +10,10 @@ Run the script to restore the StockLiveV1 database to SQL Server 2017 or greater
 # StockTrade_dotNet
 Load the .Net Core 6 project StockTrade_dotNet/StockTrade.Web.API.sln
 
+
+Change the appsettings.json->dbConnection and point to the database
+
+
 Fully functional Web API, use any stock code listed on the ASX
 
 NAB       -   NATIONAL AUSTRALIA BANK LIMITED
