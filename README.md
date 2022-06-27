@@ -1,4 +1,4 @@
-# StockTrack_Abridged
+# StockTrade_Abridged
 A shortened repo of StockTracker
 
 Before running the script BuildStockLiveV1DB.sql, change the following destination path on line 7 and 9 for your own environments:
