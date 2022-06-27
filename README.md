@@ -54,7 +54,15 @@ The Project is NextJS using Typescript, a demo can be found at:
 # https://stock-tracker-react.vercel.app
 
 
-# If you get a Serverless timeout please clear all cookies for https://stock-tracker-react.vercel.app
+# If you get a Serverless timeout 
 
+This Serverless Function has crashed
+
+Your connection is working correctly
+
+Vercel is working correctly
+
+
+Clear all cookies for https://stock-tracker-react.vercel.app in the browser
 
 Login process being changed from AWS Cognito to another provider
