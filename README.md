@@ -1,4 +1,5 @@
 # StockTrade_Abridged
+
 A shortened repo of StockTracker
 
 Before running the script BuildStockLiveV1DB.sql, change the following destination path on line 7 and 9 for your own environments:
@@ -7,8 +8,14 @@ Before running the script BuildStockLiveV1DB.sql, change the following destinati
 
 Run the script to restore the StockLiveV1 database to SQL Server 2017 or greater
 
+
 # StockTrade_dotNet
+
 Load the .Net Core 6 project StockTrade_dotNet/StockTrade.Web.API.sln
+
+
+Change the appsettings.json->dbConnection and point to the database
+
 
 Fully functional Web API, use any stock code listed on the ASX
 
@@ -32,7 +39,9 @@ API Version is 1 for all requests
 For example:
 
 Stock Code:   BHP
+
 Api Version:  1
+
 
 
 
@@ -45,7 +54,16 @@ The Project is NextJS using Typescript, a demo can be found at:
 # https://stock-tracker-react.vercel.app
 
 
-# If you get a Serverless timeout please clear all cookies for https://stock-tracker-react.vercel.app
+# If you get a Serverless timeout 
 
+This Serverless Function has crashed
+
+Your connection is working correctly
+
+Vercel is working correctly
+
+
+Clear all cookies, local storage for https://stock-tracker-react.vercel.app in the browser and refresh
 
 Login process being changed from AWS Cognito to another provider
+          
