@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StockTracker_dotNet\StockTrade.API.csproj" />
+    <ProjectReference Include="..\StockTrade_dotNet\StockTrade.API.csproj" />
   </ItemGroup>
 
 </Project>
