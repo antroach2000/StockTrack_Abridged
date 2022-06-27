@@ -19,7 +19,7 @@ namespace StockTrade.API.API
         public async Task<CompanyASX> GetCompany(string stockCode)
         {
             var client = _clientFactory.CreateClient(GlobalConstants.ASX_API);
-            var response = await client.GetAsync($"company/{stockCode}?fields=primary_share");
+            var response = await client.GetAsync($"company/{stockCode.Trim()}?fields=primary_share");
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
@@ -31,7 +31,7 @@ namespace StockTrade.API.API
         public async Task<LatestAnnualReportASX> GetCompanyAnnualReports(string StockCode)
         {
             var client = _clientFactory.CreateClient(GlobalConstants.ASX_API);
-            var response = await client.GetAsync($"company/{StockCode}?fields=latest_annual_reports");
+            var response = await client.GetAsync($"company/{StockCode.Trim()}?fields=latest_annual_reports");
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
@@ -43,7 +43,7 @@ namespace StockTrade.API.API
         public async Task<object> GetCompanyDividends(string stockCode, int? yearsHistory)
         {
             var client = _clientFactory.CreateClient(GlobalConstants.ASX_API);
-            var response = await client.GetAsync($"company/{stockCode}/dividends");
+            var response = await client.GetAsync($"company/{stockCode.Trim()}/dividends");
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
@@ -56,7 +56,7 @@ namespace StockTrade.API.API
 
             if (yearsHistory != null)
             {
-                var responseDividendHistory = await client.GetAsync($"company/{stockCode}/dividends/history?years={yearsHistory}");
+                var responseDividendHistory = await client.GetAsync($"company/{stockCode.Trim()}/dividends/history?years={yearsHistory}");
 
                 if (responseDividendHistory.StatusCode == HttpStatusCode.OK)
                 {
@@ -74,7 +74,7 @@ namespace StockTrade.API.API
         public async Task<AnnouncementASX> GetCompanyAnnouncements(string stockCode)
         {
             var client = _clientFactory.CreateClient(GlobalConstants.ASX_API);
-            var response = await client.GetAsync($"company/{stockCode}/announcements?count=10&market_sensitive=false");
+            var response = await client.GetAsync($"company/{stockCode.Trim()}/announcements?count=10&market_sensitive=false");
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
@@ -86,7 +86,7 @@ namespace StockTrade.API.API
         public async Task<IList<MarketPriceASX>> GetCompanyShareData(string stockCode, int days)
         {
             var client = _clientFactory.CreateClient(GlobalConstants.ASX_API);
-            var response = await client.GetAsync($"share/{stockCode}/prices?interval=daily&count={days}");
+            var response = await client.GetAsync($"share/{stockCode.Trim()}/prices?interval=daily&count={days}");
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
@@ -99,7 +99,7 @@ namespace StockTrade.API.API
         public async Task<CompanyOfficerASX> GetCompanyPeople(string stockCode)
         {
             var client = _clientFactory.CreateClient(GlobalConstants.ASX_API);
-            var response = await client.GetAsync($"company/{stockCode}/people");
+            var response = await client.GetAsync($"company/{stockCode.Trim()}/people");
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
