@@ -63,6 +63,7 @@ Your connection is working correctly
 Vercel is working correctly
 
 
-Clear all cookies for https://stock-tracker-react.vercel.app in the browser
+Clear all cookies, local storage for https://stock-tracker-react.vercel.app in the browser and refresh
 
 Login process being changed from AWS Cognito to another provider
+          
