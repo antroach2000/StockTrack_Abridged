@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockTrade.API", "StockTrade.API.csproj", "{D98CF583-57A9-42F0-B34F-1CCB263481DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockTrade.API.Tests", "..\StockTrade.Tests\StockTrade.API.Tests.csproj", "{2A19222A-C47C-484E-A2A3-088C46A3E053}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D98CF583-57A9-42F0-B34F-1CCB263481DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98CF583-57A9-42F0-B34F-1CCB263481DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98CF583-57A9-42F0-B34F-1CCB263481DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98CF583-57A9-42F0-B34F-1CCB263481DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A19222A-C47C-484E-A2A3-088C46A3E053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A19222A-C47C-484E-A2A3-088C46A3E053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A19222A-C47C-484E-A2A3-088C46A3E053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A19222A-C47C-484E-A2A3-088C46A3E053}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7381D1B-4A9E-4BD6-B26C-FE40FE2FD9F3}
+	EndGlobalSection
+EndGlobal
